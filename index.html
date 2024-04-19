@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація в Facebook</title>
+  <style>
+    /* Додайте стилі за потребою */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ddd; /* Сірий фон */
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: auto;
+      background-color: #fff; /* Колір фону форми */
+      padding: 20px;
+      border-radius: 8px; /* Закруглені кути */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь */
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+
+    .note {
+      font-size: 14px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .radio-label {
+      display: flex;
+      align-items: center;
+    }
+
+    .radio-label input {
+      margin-right: 5px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #1877f2;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <form action="#" method="post">
+
+    <h2>Зареєструйся</h2>
+
+    <p class="note">Це безкоштовно і так буде завжди</p>
+
+    <div class="flex-container">
+      <div class="form-group">
+        <label for="firstName">Ім'я:</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Прізвище:</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="phoneNumber">Номер телефону:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+
+    <div class="form-group">
+      <label for="birthdate">Дата народження:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+    </div>
+
+    <div class="form-group">
+      <label>Стать:</label>
+      <div class="flex-container">
+        <div class="radio-label">
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Жінка</label>
+        </div>
+        <div class="radio-label">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Чоловік</label>
+        </div>
+        <div class="radio-label">
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Інше</label>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit">Зареєструватися</button>
+
+  </form>
+</div>
+
+</body>
+</html>
